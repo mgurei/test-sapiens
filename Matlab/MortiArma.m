@@ -15,7 +15,7 @@
 function out = MortiArma(E1, E2, F1, F2, A, D, N, HP2 )
     
 
-out = (E1/E2)*(F1/F2)*(A*D)*(N/HP2);
+out = (E1/E2)*(F1/F2)*(A/D)*(N/HP2);
     
 
 end
