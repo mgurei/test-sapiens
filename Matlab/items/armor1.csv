@@ -1,5 +1,4 @@
 Name,Cut defense,Blunt defense,Pierce defense,Material,Cost,Durability,Immortality
-,,,,,,,
 Cloth,1,1,1,cloth,10,5x,0.01
 Leather,8,6,6,leather,25,6x,0.02
 Light copper armor,10,8,10,copper,100,7x,0.05

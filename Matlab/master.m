@@ -1,6 +1,7 @@
 % @Author: Mihai Gurei <mihaig>
-% @Date:   "Saturday, 30th December 2017, 18:15:22 pm"
+% @Date:   "Saturday, 30th December 2017, 20:36:50"
 % @Email:  mihai.gurei@analphabeta.com
+% @Project: Sapiens
 % @Filename: master.m
 % @License: lgpl3
 
@@ -14,7 +15,7 @@ addpath(genpath('items'))    % Add items specifics
 addpath(genpath('test'))     % Add test functions
 
 
-%%
+%% More to come
 
 
 %EOF
