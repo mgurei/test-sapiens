@@ -9,7 +9,8 @@
 clear all, close all, clc
 
 % Adding up all folders to the working path
-% cd ~/Documents/workstation/sapiens/Matlab/
+% cd ~/Documents/workstation/sapiens/Matlab
+cd Matlab/
 master
 
 %% Load items
@@ -58,16 +59,15 @@ plot(damage', 'LineWidth', 2);
 legend(weapons_list.Name)
 xticklabels(tick_info)
 xtickangle(45)
-xlabel('Damage')
+ylabel('Damage')
 title('Comparison')
 
-    
+
 %% Plot 3D
 figure()
 surf(1:size(weapons_list,1), 1:size(armor_list,1), damage')
 xticklabels(weapons_list.Name)
 yticklabels(armor_list.Name)
-
 
 
 
