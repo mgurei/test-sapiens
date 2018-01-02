@@ -8,9 +8,10 @@
 function deadmen = m_DeadMenCalc(pure_damage, armor, paramA, paramD)
     % Attacker
     % pure_damage(1:3): cut, blunt, pierce
+    % paramA: to be defined
     % Defenser
     % armor(1:3): cur, blunt, pierce
-    % param: to be undefined
+    % patamD: to be defined
 
     % Experience
     if paramA == 0
