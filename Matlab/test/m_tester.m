@@ -3,9 +3,10 @@
 % @Email:  mihai.gurei@analphabeta.com
 % @Project: Sapiens
 % @Filename: m_testTester.m
-% @Last modified by:   mihaig
-% @Last modified time: "Sunday, 31st December 2017, 17:26:01"
 % @License: lgpl3
+
+%% This is a tester, In the function a string with the method name to
+% be used has to be passed as the first argument. 
 
 % Clearing memory
 clear all, close all, clc
