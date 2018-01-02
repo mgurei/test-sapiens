@@ -4,7 +4,7 @@
 % @Project: Sapiens
 % @Filename: m_testTester.m
 % @Last modified by:   mihaig
-% @Last modified time: "Sunday, 31st December 2017, 16:35:06"
+% @Last modified time: "Sunday, 31st December 2017, 17:26:01"
 % @License: lgpl3
 
 % Clearing memory
@@ -15,4 +15,4 @@ clear all, close all, clc
 cd Matlab/
 master
 
-m_deadTester('m_Damage', true, false)
+m_deadTester('m_DeadMenCalc', true, false);

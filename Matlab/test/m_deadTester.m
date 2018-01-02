@@ -20,7 +20,8 @@ function deadmen = m_deadTester(method_name, twoD, threeD)
 
     % method finding
     method = str2func(method_name);
-    parameters = 0;
+    paramA = 0;
+    paramD = 0;
 
     for weap_idx = 1:size(weapons_list,1)
         %Getting values of the weapon damages (cut, blunt and pierce)
@@ -33,7 +34,8 @@ function deadmen = m_deadTester(method_name, twoD, threeD)
                 armor_list.PierceDefense(arm_idx);];
 
                 % Computing the damage after armor removal
-                damage(weap_idx, arm_idx) = method(pure_damage, armor, parameters);
+                damage(weap_idx, arm_idx) = method(pure_damage, armor, ...
+                    paramA, paramD);
         end
     end
 
@@ -43,7 +45,7 @@ function deadmen = m_deadTester(method_name, twoD, threeD)
         plot(damage', 'LineWidth', 2);
         set(gca,'LineWidth', 2, 'FontSize', 10);
         legend(weapons_list.Name)
-        xticklabels(tick_info)
+        xticklabels(weapons_list.Name)
         xtickangle(45)
         ylabel('Damage')
         title('2D comparison')
