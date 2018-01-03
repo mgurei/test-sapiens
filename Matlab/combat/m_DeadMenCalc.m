@@ -33,11 +33,18 @@ function deadmen = m_DeadMenCalc(pure_damage, armor, paramA, paramD)
     damDealt = m_Damage(pure_damage, armor);
 
     % Numbers and unit HP modifier
-    % TODO: Does this actually make any sense? 
+    % TODO: Does this actually make any sense? gs cha
     num = 100;
     hpD = 50;
     numRatio = m_Ratio(num, hpD);
 
     deadmen = formMod * expRatio * damDealt * numRatio;
+
+    % Charge damahe
+    charge = false;     % TODO: get charge value from somewhere
+    if (charge)
+
+    end
+
 
 end
