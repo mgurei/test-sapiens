@@ -20,6 +20,7 @@ function deadmen = m_deadTester(method_name, twoD, threeD)
 
     % method finding
     method = str2func(method_name);
+    % TODO: give meaning to parameters
     paramA = 0;
     paramD = 0;
 
@@ -45,7 +46,7 @@ function deadmen = m_deadTester(method_name, twoD, threeD)
         plot(damage', 'LineWidth', 2);
         set(gca,'LineWidth', 2, 'FontSize', 10);
         legend(weapons_list.Name)
-        xticklabels(weapons_list.Name)
+        xticklabels(armor_list.Name)
         xtickangle(45)
         ylabel('Damage')
         title('2D comparison')

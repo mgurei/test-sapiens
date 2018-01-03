@@ -5,6 +5,13 @@
 % @Filename: m_DeadMenCalc.m
 % @License: lgpl3
 
+%% Function that outputs the number of dead men after an attack.
+% The result depends on the values of attacke and defenser. There are:
+% - Experience ratio.
+% - Formation modifier.
+% - Damage calculated from pure damage / armor reduction.
+% - Numbers and HP modifier.
+
 function deadmen = m_DeadMenCalc(pure_damage, armor, paramA, paramD)
     % Attacker
     % pure_damage(1:3): cut, blunt, pierce
@@ -14,19 +21,23 @@ function deadmen = m_DeadMenCalc(pure_damage, armor, paramA, paramD)
     % patamD: to be defined
 
     % Experience
-    if paramA == 0
-        expA = 1;
-    else
-        expA = paramA(1);
-    end
+    % TODO: give an actual attrubution from param values
+    expA = 1;
+    expD = 1;
+    expRatio = m_Ratio(expA, expD);  % Calc ration expA/expB
 
-    if paramD == 0
-        expD = 1;
-    else
-        expD = paramD(1);
-    end
+    % Formation modifier
+    formMod = m_formMod(paramA, paramD);  % Just equal 1, for now.
 
+    % Actual damage calculation
+    damDealt = m_Damage(pure_damage, armor);
 
-    deadmen = m_expRatio(expA, expD) * m_Damage(pure_damage, armor);
+    % Numbers and unit HP modifier
+    % TODO: Does this actually make any sense? 
+    num = 100;
+    hpD = 50;
+    numRatio = m_Ratio(num, hpD);
+
+    deadmen = formMod * expRatio * damDealt * numRatio;
 
 end
