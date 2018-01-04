@@ -1,1 +1,35 @@
 .~
+# Unity Generated
+[Tt]emp/
+[Ob]bj/
+[Bb]uild
+/[Bb]uilds/
+/[Ll]ibrary/
+sysinfo.txt
+*.stackdump
+/Assets/AssetStoreTools*
+*.apk
+*.unitypackage
+
+#Visual Studio / Mondo Develop
+[Ee]xported[Oo]bj/
+.vs/
+/*.userprefs
+/*pidb
+*.pidb.meta
+/*.suo
+/*.user
+.consulo/
+/*.tmp
+
+# OS generated
+.DS_Store*
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+ehthumbs.db
+[Tt]humbs.db
+[Dd]esktop.ini
+Corridor/Library/ShaderCache/
+Corridor/Library/metadata/
