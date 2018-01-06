@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//Execute in editor
+[ExecuteInEditMode]
+
 // Required components
 [RequireComponent(typeof(MeshFilter))]
 [RequireComponent(typeof(MeshRenderer))]
@@ -10,9 +13,9 @@ using UnityEngine;
 public class TileMap : MonoBehaviour {
 
 	// Size of the map
-	int size_x = 100;
-	int size_z = 50;
-	float tileSize = 1.0f;
+	public int size_x = 100;
+	public int size_z = 50;
+	public float tileSize = 1.0f;
 
 	// Use this for initialization
 	void Start () {
@@ -20,7 +23,7 @@ public class TileMap : MonoBehaviour {
 	}
 
 
-	void BuildMash() {
+	public void BuildMash() {
 
 		// Numbers and sizes
 		int numTiles = size_x * size_z;
@@ -40,9 +43,9 @@ public class TileMap : MonoBehaviour {
 		int x, z;
 		for (z = 0; z < vsize_z; z++) {
 			for (x = 0; x < vsize_x; x++) {
-				vertices[z * vsize_x + x] = new Vector3( x * tileSize, 0 , z * tileSize);
+				vertices[z * vsize_x + x] = new Vector3( x * tileSize, Random.Range(-1f, 1f) , z * tileSize);
 				normals [z * vsize_x + x] = Vector3.up;
-				uv [z * vsize_x + x] = new Vector2 ((float)x / vsize_x, z / vsize_z);
+				uv [z * vsize_x + x] = new Vector2 ((float)x / size_x, (float)z / size_z);
 			}
 		}	
 
@@ -50,12 +53,12 @@ public class TileMap : MonoBehaviour {
 			for (x = 0; x < size_x; x++) {
 				int triOffset = (z * size_x + x) * 6;
 				triangles[triOffset + 0] = z * vsize_x + x + 0;
-				triangles[triOffset + 1] = z * vsize_x + x + vsize_x + 1;
-				triangles[triOffset + 2] = z * vsize_x + x + vsize_x + 0;
+				triangles[triOffset + 1] = z * vsize_x + x + vsize_x + 0;
+				triangles[triOffset + 2] = z * vsize_x + x + vsize_x + 1;
 
 				triangles[triOffset + 3] = z * vsize_x + x + 0;
-				triangles[triOffset + 4] = z * vsize_x + x + 1;
-				triangles[triOffset + 5] = z * vsize_x + x + vsize_x + 1;
+				triangles[triOffset + 4] = z * vsize_x + x + vsize_x + 1;
+				triangles[triOffset + 5] = z * vsize_x + x + 1;
 
 			}
 		}
@@ -75,6 +78,7 @@ public class TileMap : MonoBehaviour {
 
 		// Applyign mesh
 		mesh_filter.mesh = mesh;
+		mesh_collider.sharedMesh = mesh;
 
 	}
 }
