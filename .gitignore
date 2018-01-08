@@ -1,26 +1,4 @@
 .~
-# Unity Generated
-[Tt]emp/
-[Ob]bj/
-[Bb]uild
-/[Bb]uilds/
-/[Ll]ibrary/
-sysinfo.txt
-*.stackdump
-/Assets/AssetStoreTools*
-*.apk
-*.unitypackage
-
-#Visual Studio / Mondo Develop
-[Ee]xported[Oo]bj/
-.vs/
-/*.userprefs
-/*pidb
-*.pidb.meta
-/*.suo
-/*.user
-.consulo/
-/*.tmp
 
 # OS generated
 .DS_Store*
