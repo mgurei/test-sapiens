@@ -1,12 +1,25 @@
+<<<<<<< HEAD
 ﻿<Properties StartupItem="Sapiens.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\TileMap.cs">
+=======
+﻿<Properties StartupItem="Assembly-CSharp.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/HexMapCamera.cs">
+>>>>>>> dc5073d3d6d7974dc5b9062ac61eb3d62bdf9825
     <Files>
-      <File FileName="Assets\Scripts\TileMap.cs" Line="58" Column="35" />
+      <File FileName="Assets/Scripts/HexGrid.cs" Line="27" Column="33" />
+      <File FileName="Assets/Scripts/HexGridChunk.cs" Line="25" Column="2" />
+      <File FileName="Assets/Scripts/HexCell.cs" Line="56" Column="9" />
+      <File FileName="Assets/Scripts/HexMesh.cs" Line="22" Column="17" />
+      <File FileName="Assets/Scripts/HexMetrics.cs" Line="23" Column="39" />
+      <File FileName="Assets/Scripts/HexMapCamera.cs" Line="37" Column="2" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/home/mihaig/Documents/workstation/sapiens/Unity/Sapiens/Assets/HexGrid.cs" line="219" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>
