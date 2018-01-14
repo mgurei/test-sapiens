@@ -1,5 +1,6 @@
 .~
 
+Unity/Sapiens/Library/
 # OS generated
 .DS_Store*
 ._*
@@ -8,5 +9,4 @@
 Icon?
 ehthumbs.db
 [Tt]humbs.db
-Unity/Sapiens/Library/
 [Dd]esktop.ini
