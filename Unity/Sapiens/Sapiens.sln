@@ -1,25 +1,3 @@
-<<<<<<< HEAD
-﻿
-Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2017
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sapiens", "Sapiens.csproj", "{143825CF-051D-5789-CC7D-90881B271FCD}"
-EndProject
-Global
-	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|Any CPU = Debug|Any CPU
-		Release|Any CPU = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{143825CF-051D-5789-CC7D-90881B271FCD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{143825CF-051D-5789-CC7D-90881B271FCD}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{143825CF-051D-5789-CC7D-90881B271FCD}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{143825CF-051D-5789-CC7D-90881B271FCD}.Release|Any CPU.Build.0 = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
-	EndGlobalSection
-EndGlobal
-=======
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
@@ -49,4 +27,3 @@ Global
 		StartupItem = Assembly-CSharp.csproj
 	EndGlobalSection
 EndGlobal
->>>>>>> dc5073d3d6d7974dc5b9062ac61eb3d62bdf9825
