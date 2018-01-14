@@ -2,6 +2,7 @@
 using UnityEngine.UI;
 
 public class HexGridChunk : MonoBehaviour {
+
 	HexCell[] cells;
 
 	HexMesh hexMesh;
@@ -12,19 +13,7 @@ public class HexGridChunk : MonoBehaviour {
 		hexMesh = GetComponentInChildren<HexMesh>();
 
 		cells = new HexCell[HexMetrics.chunkSizeX * HexMetrics.chunkSizeZ];
-	}
-
-//	void Start () {
-//		hexMesh.Triangulate(cells);
-//	}
-
-	void LateUpdate () {
-		hexMesh.Triangulate(cells);
-		enabled = false;
-	}
-
-	public void Refresh () {
-		enabled = true;
+		ShowUI(false);
 	}
 
 	public void AddCell (int index, HexCell cell) {
@@ -34,4 +23,16 @@ public class HexGridChunk : MonoBehaviour {
 		cell.uiRect.SetParent(gridCanvas.transform, false);
 	}
 
+	public void Refresh () {
+		enabled = true;
+	}
+
+	public void ShowUI (bool visible) {
+		gridCanvas.gameObject.SetActive(visible);
+	}
+
+	void LateUpdate () {
+		hexMesh.Triangulate(cells);
+		enabled = false;
+	}
 }

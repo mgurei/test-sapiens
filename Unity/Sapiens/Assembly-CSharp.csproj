@@ -62,16 +62,17 @@
      <Compile Include="Assets\Scene_2_HexMap1\Scripts\HexMap.cs" />
      <Compile Include="Assets\Scene_2_HexMap1\Scripts\HexMap_Continent.cs" />
      <Compile Include="Assets\Scripts\EdgeVertices.cs" />
-     <Compile Include="Assets\Scripts\HeDirection.cs" />
      <Compile Include="Assets\Scripts\HexCell.cs" />
      <Compile Include="Assets\Scripts\HexCoordinates.cs" />
+     <Compile Include="Assets\Scripts\HexDirection.cs" />
      <Compile Include="Assets\Scripts\HexEdgeType.cs" />
      <Compile Include="Assets\Scripts\HexGrid.cs" />
      <Compile Include="Assets\Scripts\HexGridChunk.cs" />
      <Compile Include="Assets\Scripts\HexMapCamera.cs" />
+     <Compile Include="Assets\Scripts\HexMapEditor.cs" />
      <Compile Include="Assets\Scripts\HexMesh.cs" />
      <Compile Include="Assets\Scripts\HexMetrics.cs" />
-     <None Include="Assets\Shaders\NewSurfaceShader.shader" />
+     <None Include="Assets\Materials\VertexColors.shader" />
  <Reference Include="Facebook.Unity.Settings">
  <HintPath>/home/mihaig/Documents/workstation/sapiens/Unity/Sapiens/Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>
  </Reference>

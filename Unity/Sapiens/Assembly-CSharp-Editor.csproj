@@ -51,9 +51,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Editor\HexCoordinatesDrawer.cs" />
      <Compile Include="Assets\Scene_1_TIleMap\Editor\TGMapInspector.cs" />
-     <None Include="Assets\Shaders\NewSurfaceShader.shader" />
+     <Compile Include="Assets\Scripts\Editor\HexCoordinatesDrawer.cs" />
+     <None Include="Assets\Materials\VertexColors.shader" />
  <Reference Include="Facebook.Unity.Settings">
  <HintPath>/home/mihaig/Documents/workstation/sapiens/Unity/Sapiens/Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>
  </Reference>
