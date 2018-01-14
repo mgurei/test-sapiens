@@ -1,6 +1,16 @@
+<<<<<<< HEAD
+﻿<Properties StartupItem="Sapiens.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\TileMap.cs">
+=======
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+<<<<<<< HEAD
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/GameEditor.cs">
+=======
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/HexMapCamera.cs">
+>>>>>>> dc5073d3d6d7974dc5b9062ac61eb3d62bdf9825
+>>>>>>> b3c8e2972738451003794abf3dc53433664798bf
     <Files>
       <File FileName="Assets/GameEditor.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/HexMetrics.cs" Line="1" Column="1" />
