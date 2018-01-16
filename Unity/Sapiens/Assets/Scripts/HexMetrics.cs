@@ -9,7 +9,7 @@ public static class HexMetrics {
 
 	public const float innerRadius = outerRadius * outerToInner;
 
-	public const float solidFactor = 0.8f;
+	public const float solidFactor = 0.98f;
 
 	public const float blendFactor = 1f - solidFactor;
 
@@ -23,13 +23,13 @@ public static class HexMetrics {
 
 	public const float verticalTerraceStepSize = 1f / (terracesPerSlope + 1);
 
-	public const float cellPerturbStrength = 4f;
+	public const float cellPerturbStrength = 0f;
 
 	public const float elevationPerturbStrength = 1.5f;
 
 	public const float streamBedElevationOffset = -1.75f;
 
-	public const float riverSurfaceElevationOffset = -0.5f;
+	public const float riverSurfaceElevationOffset = -0.25f;
 
 	public const float noiseScale = 0.003f;
 
