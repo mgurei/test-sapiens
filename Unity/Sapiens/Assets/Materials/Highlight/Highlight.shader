@@ -11,7 +11,7 @@
 
 	SubShader {
 		Tags { 
-			"Queue"="Transparent" 
+			"Queue"="Transparent+10" 
 			"IgnoreProjector"="True" 
 			"RenderType"="Transparent" 
 			"PreviewType"="Plane"
