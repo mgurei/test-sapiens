@@ -9,12 +9,6 @@ public class HexGameUI : MonoBehaviour {
 
 	HexUnit selectedUnit;
 
-	public int Speed {
-		get {
-			return 24;
-		}
-	}
-
 	public void SetEditMode (bool toggle) {
 		enabled = !toggle;
 		grid.ShowUI(!toggle);
